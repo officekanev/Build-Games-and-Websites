@@ -1,0 +1,438 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, section, svg, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+// vertical-align: baseline;
+//background: transparent;
+}
+
+@font-face {
+    font-family: Play;
+    src: url('../fonts/Play-Bold.ttf');
+    src: url('../fonts/Play-Regular.ttf');
+}
+
+@font-face {
+    font-family: Overlock;
+    src: url('../fonts/Overlock-fonts/Overlock-Regular.ttf');
+}
+
+body {
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+header, footer, menu, nav, section {
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.SITE_ROOT {
+    width:990px;
+    padding-top: 50px;
+    margin: 0 auto;
+    //border: 1px dashed red;
+}
+
+#header-text-decoration {
+    width:990px;
+    height: 150px;
+//border: 1px dashed red;
+    margin: 0;
+    padding: 0;
+}
+
+section#img-home1,
+a.social-small-screen1,
+section.footer1 {
+    display: none;
+}
+
+#image-logo-site {
+    width: 89%;
+    float: left;
+    //margin: 0 auto;
+    //border: 1px dashed red
+}
+
+aside#image-logo-site > img {
+    width: 90%;
+    height: auto;
+}
+
+section.navigation {
+    float: right;
+//border: 1px dashed red;
+    width: 540px;
+    height: 20px;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color:#12C784;
+}
+
+.parent-navigation > li {
+    list-style: none;
+    display: inline-block;
+    padding: 2px;
+    width: 65px;
+    font-size: 17px;
+    font-family: Overlock,sans-serif;
+    font-weight: 600;
+    margin-right: 20px;
+    color:#12C784;
+//border: 1px dashed blue;
+    text-align: right;
+}
+
+.parent-navigation-small-size {
+    display: none;
+}
+
+.parent-navigation > li:last-of-type {
+    margin-right: 0;
+}
+
+.parent-navigation > li:first-of-type {
+    border-top: 1px solid #0C9965;
+    border-bottom: 1px solid #0C9965;
+    cursor: pointer;
+}
+
+.parent-navigation  #home-li > a {
+    color: #0C9965;
+}
+
+.parent-navigation > #home-li:hover {
+    cursor: pointer;
+}
+
+section#img-home {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+section.footer {
+    float: left;
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.social-nested {
+    float: left;
+    margin: 50px 0 0 0;
+    //border: 1px dashed pink;
+    width: 70px;
+    height: 70px;
+}
+
+.social-nested a > img {
+    width: 60px;
+    height: 60px;
+}
+
+.parent-navigation > li:hover {
+    border-top: 1px solid #0C9965;
+    border-bottom: 1px solid #0C9965;
+    color: #0C9965;
+    cursor: pointer;
+}
+
+ul.drop-down {
+    display: none;
+    -webkit-padding-start: 0;
+//border: 1px dashed pink;
+}
+
+.drop-down li {
+    text-align: right;
+    font-family: Overlock,sans-serif;
+    color: #12C784;
+    margin-bottom: 10px;
+    margin-right: 120px;
+//border: 1px dashed pink;
+}
+
+.drop-down li > a:hover {
+    color: #0C9965;
+    cursor: pointer;
+}
+
+.drop-down li:first-child {
+    margin-top: 20px;
+}
+
+ul.parent-navigation li:hover ul {
+    position: absolute;
+    display: block;
+}
+
+ul.parent-navigation li:hover ul li {
+    display: block;
+    border-radius: 0;
+    position: relative;
+    right: 100px;
+}
+
+ul.parent-navigation li:hover ul#portfolio-drop-down li{
+    margin-left: 30px;
+}
+
+#img-home {
+    margin: 0 auto;
+    margin: 200px 0 100px 0;
+    width: 990px;
+    height: 500px;
+}
+
+.img-home {
+    width: 100%;
+    height: auto;
+}
+
+.footer > div {
+    width: 100%;
+    height: 20px;
+    background-color: greenyellow;
+    font-family: Overlock, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: plum;
+    padding: 10px 0;
+}
+
+.social-small-screen {
+    display: none;
+}
+
+/*======================================*/
+/*========================================*/
+/*=====================================*/
+/* Desktop Layout: 769px to a max of 1232px.
+Inherits styles from: Mobile Layout and Tablet Layout. */
+
+
+@media only screen and
+(max-width: 1232px) {
+
+    .SITE_ROOT {
+        width: 96.2%;
+        //max-width: 1232px;
+        margin: 0 auto;
+        //border: 1px dashed red;
+    }
+
+    #header-text-decoration {
+       // clear: both;
+       // float: left;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        //border: 1px dashed gray;
+    }
+
+    section.navigation {
+       // position: fixed;
+        margin: 50px 0 80px 0;
+        width: 100%;
+        text-align: center;
+        height:28px;
+       // background-color: #1F1F1F;
+       // border: none;
+        z-index: 1000;
+    }
+    ul#parent-navigation {
+        padding: 0px;
+        width: auto;
+        font-size: 120%;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .parent-navigation-small-size {
+        display: none;
+    }
+
+    ul#list-nav li {
+        display: inline;
+        list-style: none;
+        //display: inline-block;
+    }
+
+    .social-nested {
+        float: left;
+        display: block;
+        margin-top: 20px;
+    }
+
+    #img-home {
+        /*width: 90%;*/
+        /*height: auto;*/
+        //margin: 0 auto
+    }
+
+    .img-home {
+        width: 93%;
+        height: auto;
+        margin: 0 auto 0 20px;
+    }
+
+    .footer > div {
+        width: 95%;
+        height: 20px;
+        margin: 0 auto;
+        background-color: greenyellow;
+        font-family: Overlock, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: plum;
+        padding: 10px 0;
+    }
+
+    .social-small-screen {
+        display: none;
+    }
+
+    /*======================================*/
+    /*========================================*/
+    /*=====================================*/
+    /* Desktop Layout: 769px to a max of 1232px.
+    Inherits styles from: Mobile Layout and Tablet Layout. */
+
+    @media only screen and
+    (max-width: 768px) {
+
+        .SITE_ROOT {
+            width: 86.2%;
+            margin: 0 auto;
+         //border: 1px dashed red;
+        }
+
+        #image-logo-site {
+            width: 100%;
+            float: left;
+            //border: 1px dashed aqua;
+        }
+
+        .social-nested {
+            display: none;
+        }
+
+        #header-text-decoration {
+            float: left;
+            margin: 0 auto 20px auto;
+            height: auto;
+            width: 100%;
+            display: block;
+            //border: 1px dashed gray;
+        }
+
+        .parent-navigation {
+            display: none;
+        }
+
+        section.navigation {
+            float: left;
+            margin: 10px 0 10px 0;
+            width: 100%;
+        }
+
+        header, footer, menu, nav, section {
+            display: block;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        ul.parent-navigation-small-size {
+            //position: relative;
+            float: left;
+            display: block;
+            width: 100%;
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        ul.parent-navigation-small-size > li{
+            text-align: center;
+            font-family: Overlock,sans-serif;
+            font-size: 16px;
+            padding: 5px 0;
+            color: #12C784;
+            margin-bottom: 10px;
+            background-color: purple;
+            border-radius: 10px;
+           //border: 1px dashed pink;
+        }
+
+        ul.parent-navigation-small-size li > a:hover {
+            cursor: pointer;
+        }
+
+        section#img-home,
+        a.social-small-screen,
+        section.footer {
+            display: none;
+        }
+
+        a.social-small-screen1 {
+            float: left;
+            display: block;
+            width: 100%;;
+            height: auto;
+            background-color: purple;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        section#img-home1 {
+            //clear: both;
+            display: block;
+            float: left;
+            width: 99%;
+            height: auto;
+            margin: 20px auto 50px auto;
+            border-radius: 10px;
+        }
+
+        .img-home {
+            //float: left;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        section.footer1  {
+            float: left;
+            display: block;
+            width: 100%;
+            height: 80px;
+            background-color: greenyellow;
+            font-family: Overlock, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            color: plum;
+            padding: 10px 0;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,313 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, section, svg, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+// vertical-align: baseline;
+//background: transparent;
+}
+
+@font-face {
+    font-family: Play;
+    src: url('../fonts/Play-Bold.ttf');
+    src: url('../fonts/Play-Regular.ttf');
+}
+
+@font-face {
+    font-family: Overlock;
+    src: url('../fonts/Overlock-fonts/Overlock-Regular.ttf');
+}
+
+body {
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+div {
+    display: block;
+}
+
+body {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.SITE_ROOT {
+    width:990px;
+    padding-top: 50px;
+    margin: 0 auto;
+//border: 1px dashed red;
+}
+
+#header-text-decoration {
+    width:990px;
+    height: 150px;
+//border: 1px dashed red;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    float: left;
+    height: 150px;
+}
+
+.logo > img{
+    width: 185px;
+    height: 150px;
+//object-fit: fill;
+    margin-right: 10px;
+//border: 1px dashed red;
+    float: left;
+}
+
+#zavyrtulka {
+    width: 150px;
+    right:-30px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.font_0 {
+    font-size:35px;
+    line-height:1.2em;
+    font-weight: normal;
+    color:#12C784;
+    font-family:Play,sans-serif;
+}
+
+.logo > .style-ixko6sof {
+    left: 10px;
+    width: 119px;
+}
+
+.text-befor-decoration, .text-after-decoration {
+    float: left;
+}
+
+#text-decoration  {
+    float: left;
+    position: relative;
+    right: 18px;
+    bottom: 10px;
+    height: 200px;
+}
+
+.text-after-decoration {
+    margin-top: 55px;
+    position: relative;
+    right: 45px;
+//border: 1px dashed red;
+}
+
+.navigation {
+    float: right;
+//border: 1px dashed red;
+    width: 780px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+ul > li {
+    text-decoration: none;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color:#12C784;
+}
+
+.parent-navigation > li {
+    padding: 2px;
+    width: 65px;
+    font-size: 17px;
+    font-family: Overlock,sans-serif;
+    font-weight: 600;
+    margin-right: 20px;
+    color:#12C784;
+//border: 1px dashed blue;
+    text-align: right;
+}
+
+.parent-navigation > li:first-of-type {
+    margin-left: 251px;
+}
+
+.parent-navigation > li:last-of-type {
+    margin-right: 0;
+}
+
+/*.parent-navigation > li:first-of-type {*/
+    /*border-top: 1px solid #0C9965;*/
+    /*border-bottom: 1px solid #0C9965;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*.parent-navigation  #home-li > a {*/
+    /*color: #0C9965;*/
+/*}*/
+
+.parent-navigation > #home-li:hover {
+    cursor: pointer;
+}
+
+.social {
+    float: right;
+    margin: 165px 250px 0 0;
+//border: 1px dashed pink;
+    width: 70px;
+    height: 70px;
+}
+
+.social a > img {
+    width: 60px;
+    height: 60px;
+}
+
+.parent-navigation > li:hover {
+    border-top: 1px solid #0C9965;
+    border-bottom: 1px solid #0C9965;
+    color: #0C9965;
+    cursor: pointer;
+}
+
+ul.drop-down {
+    display: none;
+    -webkit-padding-start: 0;
+//border: 1px dashed pink;
+}
+
+.drop-down li {
+    text-align: right;
+    font-family: Overlock,sans-serif;
+    color: #12C784;
+    margin-bottom: 10px;
+    margin-right: 120px;
+//border: 1px dashed pink;
+}
+
+.drop-down li > a:hover {
+    color: #0C9965;
+    cursor: pointer;
+}
+
+.drop-down li:first-child {
+    margin-top: 20px;
+}
+
+ul.parent-navigation li:hover ul {
+    position: absolute;
+    display: block;
+}
+
+ul.parent-navigation li:hover ul li {
+    display: block;
+    border-radius: 0;
+    position: relative;
+    right: 100px;
+//font-weight: normal;
+//padding-left: 0;
+//width: 170px;
+}
+
+ul.parent-navigation li:hover ul#portfolio-drop-down li{
+    margin-left: 30px;
+}
+
+section#body-section {
+    float: left;
+    margin: 0 auto;
+    margin-top: 250px;
+    width: 1260px;
+//border: 1px dashed pink;
+}
+
+section#body-section #first-line .first-line-left-text {
+    width: 273px;
+    float: left;
+}
+
+section#body-section #first-line .first-line-left-text {
+    margin-left: 50px;
+    font-family: Overlock,sans-serif;
+    font-size: 15px;
+    color: #9B9B9B;
+    text-align: justify
+}
+
+.first-line-right-img {
+    float: left;
+    margin-left: 90px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first-line-right-img > img {
+    width: 570px;
+}
